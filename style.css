@@ -81,7 +81,7 @@ span.navbar-toggler-icon{
     padding: 2px;
 }
 
-.form-control{
+#weather-input{
     border: 0 !important;
     border-radius: 30px !important;
     margin: 2px;
@@ -113,8 +113,6 @@ span.navbar-toggler-icon{
 
 .features{
     padding: 100px 0;
-    height: 90vh;
-
 }
 
 .features h2{
@@ -316,4 +314,12 @@ footer hr{
 
 footer .copyright{
     text-align: center;
+}
+
+.input-area{
+    margin-bottom: 20px;
+}
+
+#sign-up-container{
+    margin-top: 100px;
 }

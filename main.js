@@ -1,3 +1,47 @@
+
+//form validation
+
+//Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+    'use strict'
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+  
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+  
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+
+  const firstName = document.getElementById('fname');
+  const errorMessage = document.getElementById('fname-error');
+  const submitForm = document.getElementById('submit-form');
+  function allLetter(inputtxt)
+      { 
+      let letters = /^[A-Za-z]+$/;
+      if(firstName.value.match(letters))
+      {
+      errorMessage.innerHTML = 'Your name have accepted : you can try another';
+      return true;
+      }
+      else
+      {
+     errorMessage.innerHTML = 'Please input alphabet characters only';
+      return false;
+      }
+      }
+
+      submitForm.addEventListener("click", allLetter);
+
+
 const displaySection = document.getElementById("display-location");
 const submitResult = document.getElementById("submitButton");
 
@@ -33,12 +77,16 @@ async function getActivities() {
             "x-rapidapi-host": "travel-advisor.p.rapidapi.com"
         }
     })
-    const response = await getData.json();
+        const response = await getData.json();
+        const result = response.data;
     // console.log(response);
-    const result = response.data;
-    // used .slice methos to grab only 3 items from the array
+
+     // used .slice methos to grab only 3 items from the array
     generateActivities(result.slice(1, 4));
-}
+       
+    }
+
+
 
 // function to generate and display activities on html 
 
@@ -87,3 +135,8 @@ function generateActivities(results) {
 
 // event listener for button click
 submitResult.addEventListener("click", getActivities);
+
+
+
+
+
