@@ -5,9 +5,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Trip Tok</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a7372169fd.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <section class="header">
+       
+        <div class="container">
+        
+            <img src="images/triptok.png">
+            <button type="button" class="login-btn">Login</button>
+        </div>
+        <h1>Travel Across The World</h1>
+        <p>Find your perfect destination</p>
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search Country or City">
+            <div class="input-group-append">
+                <button type="submit" class="input-group-text btn">Search</button>
+            </div>
+        </div>
+    </section>
+    <section class="formContainer">
+        <h1>Select your favourite Thai destination to reveal unforgettable activities </h1>
+        <div class="input-group">
+        <select class="form-select" aria-label="Default select example" id="cities" name="cities">
+            <option selected>Open to select destination</option>
+            <option class="city" value="Bangkok">Bangkok</option>
+            <option class="city" value="ChiangMai">Chiang Mai</option>
+            <option class="city" value="KoSamui">Ko Samui</option>
+            <option class="city" value="Phuket">Phuket</option>
+          </select>
+          <div class="input-group-append">
+            <button type="submit" class="input-group-text btn" id="submitButton">Show Activities</button>
+        </div>
+    </div>
+    </section>
+    <section class="features">
+        <h1>Featured Activities</h1>
+        <div class="container">
+            <div class="row" id="display-location">
+               
+            </div>
+        </div>
+    </section>
+    <section class="gallery">
+        <h1>Travelling Gallery</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="gallery-box">
+            <img src="images/travel-1.jpg">
+            <h4>Los Angeles</h4>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class="gallery-box">
+            <img src="images/travel-2.jpg">
+            <h4>Los Angeles</h4>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class="gallery-box">
+            <img src="images/travel-3.jpg">
+            <h4>Los Angeles</h4>
+        </div>
+        </div>
+        <div class="col-md-3">
+            <div class="gallery-box">
+            <img src="images/travel-4.jpg">
+            <h4>Los Angeles</h4>
+        </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section class="banner">
+<div class="banner-highlights">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Get 30% on top destinations</h2>
+                <p>Book your tickets before 31st August and avail 30% flat discount</p>
+            </div>
+            <div class="col-md-4">
+                <button type="button" class="booking-btn">Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section class="users-feedback">
+        <h1>Users Review</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magnam rerum deserunt asperiores beatae, saepe itaque nisi totam, corporis, dignissimos aliquid. Qui rerum nesciunt aliquam doloremque, perspiciatis dolore fugit sunt!</p>
+                        <h5>Jack Jones</h5>
+                        <small>Los Angeles</small>
+                    </div>
+                        <img src="images/user1.jpg">
+                </div>
+                <div class="col-md-4">
+                    <div class="user-review">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magnam rerum deserunt asperiores beatae, saepe itaque nisi totam, corporis, dignissimos aliquid. Qui rerum nesciunt aliquam doloremque, perspiciatis dolore fugit sunt!</p>
+                        <h5>Jack Jones</h5>
+                        <small>Los Angeles</small>
+                    </div>
+                        <img src="images/user2.jpg">
+                </div>
+            <div class="col-md-4">
+                <div class="user-review">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magnam rerum deserunt asperiores beatae, saepe itaque nisi totam, corporis, dignissimos aliquid. Qui rerum nesciunt aliquam doloremque, perspiciatis dolore fugit sunt!</p>
+                    <h5>Jack Jones</h5>
+                    <small>Los Angeles</small>
+                </div>
+                    <img src="images/user3.jpg">
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="images/triptok.png" class="footer-logo">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure magnam rerum deserunt asperiores beatae, saepe itaque nisi totam, corporis, dignissimos aliquid. Qui rerum nesciunt aliquam doloremque, perspiciatis dolore fugit sunt!</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Features</h4>
+                    <p>Deals & Offers</p>
+                    <p>Customers Reviews</p>
+                    <p>Cancellation Policy</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Quick Contact</h4>
+                    <p><i class="fa-solid fa-phone"></i>0176 234 555</p>
+                    <p><i class="fa-solid fa-envelope"></i></i>hello@triptok.com</p>
+                    <p><i class="fa-solid fa-house"></i>abc Jones Street</p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Follow Us on</h4>
+                    <p><i class="fa-brands fa-facebook"></i>Facebook</p>
+                    <p><i class="fa-brands fa-instagram"></i>Instagram</p>
+                    <p><i class="fa-brands fa-twitter"></i>Youtube</p>
+                </div>
+            </div><hr>
+            <p class="copyright">Made with <i class="fa-solid fa-heart"></i> by Alina Savin </p>
+        </div>
+    </footer>
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>
