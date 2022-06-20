@@ -69,6 +69,7 @@
 
 .form-select{
     border-radius: 30px !important;
+    width: 100px !important;
 }
 .input-group-text{
     width: 100px;
