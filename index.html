@@ -11,13 +11,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <section class="header">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="images/triptok.png" id="nav-logo">
+              </a>
+              <button class="navbar-toggler" id="menu" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#weather">Weather App</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#thaiDestinations">Discover Thailand</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#reviews">Reviews</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button type="button" class="login-btn" onclick="document.location=`sign-up.html`">Login</button>
+          </nav>
+    </header>
+    <section class="header" id="weather">
        
-        <div class="container">
+        <!-- <div class="container">
         
             <img src="images/triptok.png">
-            <button type="button" class="login-btn">Login</button>
-        </div>
+           
+        </div> -->
         <h1>Travel Across The World</h1>
         <p>Find your perfect destination</p>
         <div class="input-group">
@@ -27,7 +59,7 @@
             </div>
         </div>
     </section>
-    <section class="formContainer">
+    <section class="features" id="thaiDestinations">
         <h1>Select your favourite Thai destination to reveal unforgettable activities </h1>
         <div class="input-group">
         <select class="form-select" aria-label="Default select example" id="cities" name="cities">
@@ -41,16 +73,14 @@
             <button type="submit" class="input-group-text btn" id="submitButton">Show Activities</button>
         </div>
     </div>
-    </section>
-    <section class="features">
-        <h1>Featured Activities</h1>
+        <h2>Featured Activities</h2>
         <div class="container">
             <div class="row" id="display-location">
                
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
         <h1>Travelling Gallery</h1>
 <div class="container">
     <div class="row">
@@ -96,7 +126,7 @@
     </div>
 </div>
     </section>
-    <section class="users-feedback">
+    <section class="users-feedback" id="reviews">
         <h1>Users Review</h1>
         <div class="container">
             <div class="row">

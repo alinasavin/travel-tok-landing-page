@@ -16,10 +16,38 @@
    text-align: center;
    color: #fff;
 }
+.navbar.navbar-expand-lg{
+    background-image: linear-gradient(#2d557d,#9610fb);
+   position: fixed;
+   top: 0;
+   overflow: hidden;
+   width: 100%;
+  
+}
+
+a.nav-link, a.nav-link.active{
+    color: #fff;
+}
+span.navbar-toggler-icon{
+    color: #fff;
+}
+
+.navbar-toggler{
+    color: #fff;
+}
+
+#nav-logo{
+    width: 170px;
+    height: 50px;
+}
 
 .header img {
     width: 170px;
     float: left;
+}
+
+#navbarNav.collapse.navbar-collapse{
+    text-align: center;
 }
 
 .login-btn{
@@ -31,6 +59,7 @@
     background: transparent;
     color: #fff;
     float: right;
+    margin-right: 100px;
 }
 
 .header h1{
@@ -84,10 +113,14 @@
 
 .features{
     padding: 100px 0;
+    height: 90vh;
 
 }
 
-h1{
+.features h2{
+    margin-top: 20px;
+}
+h1, h2{
     text-align: center;
     padding-bottom: 30px;
 }
