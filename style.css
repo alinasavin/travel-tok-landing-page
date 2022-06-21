@@ -1,3 +1,4 @@
+
 * 
 {
     padding: 0;
@@ -7,7 +8,6 @@
 .header
 {
     height: 100vh;
-    
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/banner1.jpg);
     background-size: cover;
     background-position: center;
@@ -63,12 +63,12 @@ span.navbar-toggler-icon{
 }
 
 .header h1{
-    padding-top: 260px;
+    padding-top: 150px;
     padding-bottom: 0;
     font-size: 55px;
 }
 
-.header p{
+.header h2{
     margin: 18px 0;
 }
 
@@ -81,7 +81,7 @@ span.navbar-toggler-icon{
     padding: 2px;
 }
 
-#weather-input{
+#country-input{
     border: 0 !important;
     border-radius: 30px !important;
     margin: 2px;
@@ -113,12 +113,13 @@ span.navbar-toggler-icon{
 
 .features{
     padding: 100px 0;
+   
 }
 
 .features h2{
     margin-top: 20px;
 }
-h1, h2{
+h1, h2 , h3{
     text-align: center;
     padding-bottom: 30px;
 }
@@ -323,3 +324,58 @@ footer .copyright{
 #sign-up-container{
     margin-top: 100px;
 }
+
+#output h2{
+    margin-top: 50px;
+}
+
+#back-btn{
+    margin-left: 500px;
+}
+
+#country-guide{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80vw;
+    max-width: 37.5em;
+    padding: 3em 2.5em;
+    border-radius: 0.62em;
+    box-shadow: 0 1.25em 1.8em rgba(8, 21, 65, 0.25);
+  }
+
+  #result {
+    margin-top: 1.25em;
+    height: auto;
+  }
+  #country-guide .flag-img {
+    display: block;
+    width: 200px;
+    min-width: 7.5em;
+    margin: 1.8em auto 1.2em auto;
+  }
+  #country-guide h2 {
+    font-weight: 600;
+    color: #222a43;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8em;
+  }
+  .data-wrapper {
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+  }
+  #country-guide h4 {
+    display: inline;
+    font-weight: 500;
+    color: #222a43;
+  }
+  #country-guide span {
+    color: #5d6274;
+   
+  }
+  #country-guide h3 {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ff465a;
+  }

@@ -26,7 +26,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#weather">Weather App</a>
+                    <a class="nav-link" href="weather-app.html">Weather App</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#thaiDestinations">Discover Thailand</a>
@@ -44,20 +44,19 @@
           </nav>
     </header>
     <section class="header" id="weather">
-       
-        <!-- <div class="container">
-        
-            <img src="images/triptok.png">
-           
-        </div> -->
-        <h1>Travel Across The World</h1>
-        <p>Find your perfect destination</p>
+            <h1>Travel Across The World</h1>
+        <h2>Find your perfect destination</h2>
+        <div class="container" id="country-guide">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search Country or City" id="weather-input">
+            <input type="text" class="form-control" placeholder="Enter a country name here" id="country-input">
             <div class="input-group-append">
-                <button type="submit" class="input-group-text btn">Search</button>
+                <button type="submit" class="input-group-text btn" id="search-btn">Search</button>
             </div>
         </div>
+        <div id="result">
+
+        </div>
+    </div>
     </section>
     <section class="features" id="thaiDestinations">
         <h1>Select your favourite Thai destination to reveal unforgettable activities </h1>
@@ -187,7 +186,7 @@
         </div>
     </footer>
     <!-- Bootstrap 5 JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
